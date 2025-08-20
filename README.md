@@ -34,24 +34,22 @@ Twoim **głównym i nadrzędnym celem** nie jest jedynie zbudowanie jednorazowej
 "Jasne. Oto kompletny, modularny skrypt `send_sms_campaign.py`, który jest w pełni konfigurowalny przez zmienne środowiskowe.
 
 **Plik: `send_sms_campaign.py`**
-```python
+python
 import os
 import requests
 # ... (pełny, dobrze skomentowany kod) ...
-```
 
 **Dodaj te zmienne do pliku `.env.example`:**
-```ini
+ini
 # Ustawienia kampanii SMS
 SMSAPI_API_KEY="TwojKluczTutaj"
 BREVO_API_KEY="TwojKluczTutaj"
 SMS_SENDER_NAME="NazwaNadawcy"
 # ID listy Brevo z kontaktami do wysyłki
 SMS_BREVO_LIST_ID="11"
-```
 
 **Propozycja do `README.md`:**
-```markdown
+markdown
 ### Wysyłka Kampanii SMS (`send_sms_campaign.py`)
 
 Ten skrypt pobiera kontakty z określonej listy w Brevo, filtruje je, a następnie wysyła spersonalizowaną wiadomość SMS przez SMSAPI.
@@ -60,9 +58,8 @@ Ten skrypt pobiera kontakty z określonej listy w Brevo, filtruje je, a następn
 Upewnij się, że w pliku `.env` ustawione są zmienne `SMSAPI_API_KEY`, `BREVO_API_KEY`, `SMS_SENDER_NAME` i `SMS_BREVO_LIST_ID`.
 
 **Uruchomienie:**
-```bash
+bash
 python send_sms_campaign.py
-``````"
 
 ---
 **PAMIĘTAJ:** Finalnym produktem jest nie tylko działająca kampania, ale **rozwiązanie "pod klucz"** na przyszłość. Twój sukces mierzy się tym, jak mało pracy będzie wymagało uruchomienie kolejnego, podobnego projektu.
